@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from "react-bootstrap/Button";
+import { Link } from 'react-router-dom';
 
 function Home (){
 	return <div>
@@ -9,7 +10,9 @@ function Home (){
     <br/>
     <input type="text" id="myText" value="password"></input>
     <br/>
-    <Button/>
+    <Link to="/Contact">
+    <Button variant="outline-primary">Login</Button>
+    </Link>
   </div>
 }
 

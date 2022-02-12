@@ -1,5 +1,4 @@
 import React from 'react';
-
 function Contact (){
 return <address>
 			You can find us here:<br />
