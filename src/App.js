@@ -1,9 +1,10 @@
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from "react-bootstrap/Button";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from './component/home';
-import About from './component/about';
-import Contact from './component/contact';
+import Home from './component/Home';
+import About from './component/About';
+import Contact from './component/Contact';
 
 function App() {
   return (
@@ -29,16 +30,16 @@ function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About Us</Link>
+            <Link to="/About">About Us</Link>
           </li>
           <li>
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/Contact">Contact Us</Link>
           </li>
         </ul>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
-          <Route exact path="/about" element={<About />}></Route>
-          <Route exact path="/contact" element={<Contact />}></Route>
+          <Route exact path="/About" element={<About />}></Route>
+          <Route exact path="/Contact" element={<Contact />}></Route>
         </Routes>
       </div>
     </Router>
